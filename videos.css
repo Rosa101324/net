@@ -1,0 +1,112 @@
+body {
+    background-image: url('imagen5.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: "Bungee Tint", serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #1f1310;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #1abc9c;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(240, 240, 240, 0.8);
+}
+
+.video-card {
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.video-header {
+    background-color: #0072c6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.video-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.video-content {
+    padding: 20px;
+}
+
+.video-content h2 {
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0072c6;
+}
+
+.video-content p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+video {
+    width: 400px; /* Reduce el ancho del video */
+    height: 225px; /* Relación de aspecto 16:9 */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+video:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
