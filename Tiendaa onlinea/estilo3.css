@@ -1,0 +1,84 @@
+/* Global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Oswald", sans-serif;
+    background-color: #000000;
+    /* Pattern from https://www.heropatterns.com/ */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    color: #1e272e;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* Header */
+  header {
+    background: #2f3640;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin-left: 10px;
+  }
+  
+  header nav {
+    display: flex;
+  }
+  
+  header nav ul {
+    display: flex;
+    gap: 15px;
+  }
+  
+  header nav ul li {
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    background: #555;
+    border-radius: 5px;
+  }
+  
+  /* Responsive Header */
+  @media (max-width: 700px) {
+    header .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
+  
